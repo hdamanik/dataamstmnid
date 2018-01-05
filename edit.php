@@ -55,36 +55,92 @@ include("koneksi.php"); // memanggil file koneksi.php untuk koneksi ke database
 				<div class="form-group">
 					<label class="col-sm-3 control-label">TANGGAL VERIFICATINAMS</label>
 					<div class="col-sm-2">
-						<select name="TANGGALVERIFICATINAMS" class="form-control" required>
-							<input type="text" name="tanggal_lahir" value="<?php echo $row ['TANGGALVERIFICATINAMS']; ?>" class="input-group datepicker form-control" date="" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" required>
-							// <option value=""> - TANGGALVERIFICATINAMS - </option>
-							// <option value="Laki-Laki">Laki-Laki</option>
-							// <option value="Perempuan">Perempuan</option>
+											
+						<input type="text" name="tanggal_lahir" value="<?php echo $row ['TANGGALVERIFICATINAMS']; ?>" class="input-group datepicker form-control" date="" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" required>
+							
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">BRANCH</label>
+					<div class="col-sm-4">
+						<select name="BRANCH" class="form-control" required>
+							<option value=""> - BRANCH - </option>
+							<option value="JAKARTA 1">JAKARTA 1</option>
+							<option value="JAKARTA 2">JAKARTA 2</option>
+							<option value="JAKARTA 3">JAKARTA 3</option>
+							<option value="BMT">BMT</option>
+                            <option value="BANTEN">BANTEN</option>
+							<option value="BALIKPAPAN">BALIKPAPAN</option>
+							<option value="BANDUNG">BANDUNG</option>
+							<option value="MEDAN">MEDAN</option>
+							<option value="PALEMBANG">PALEMBANG</option>
+							<option value="YOGYAKARTA">YOGYAKARTA</option>
+							<option value="SURABAYA">SURABAYA</option>
+							<option value="BALI">BALI</option>
+							<option value="MAKASSAR">MAKASSAR</option>
 						</select>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-3 control-label">Tempat Lahir</label>
+					<label class="col-sm-3 control-label">IDCARD TYPE</label>
 					<div class="col-sm-4">
-						<input type="text" name="tempat_lahir" value="<?php echo $row ['tempat_lahir']; ?>" class="form-control" placeholder="Tempat Lahir" required>
+						<select name="BRANCH" class="form-control" required>
+							<option value=""> - IDCARDTYPE - </option>
+							<option value="KTP">KTP</option>
+							<option value="SIM">SIM</option>
+							<option value="PASPOR">PASPOR</option>						
+						</select>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-3 control-label">Tanggal Lahir</label>
-					<div class="col-sm-4">
-						<input type="text" name="tanggal_lahir" value="<?php echo $row ['tanggal_lahir']; ?>" class="input-group datepicker form-control" date="" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" required>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-3 control-label">CHECKBY</label>
+					<label class="col-sm-3 control-label">CHECK BY</label>
 					<div class="col-sm-3">
-						<textarea name="CHECKBY" class="form-control" placeholder="CHECKBY"><?php echo $row ['CHECKBY']; ?></textarea>
+						<select name="BRANCH" class="form-control" required>
+							<option value="Agustin Citra Candra">Agustin Citra Candra</option>
+							<option value="AldiNugraha">AldiNugraha</option>
+							<option value="AngraNurwinsyah">AngraNurwinsyah</option>
+							<option value="ArsiliaLestari">ArsiliaLestari</option>
+							<option value="AstridRetcitaBilhaq">AstridRetcitaBilhaq</option>
+							<option value="DeswitaNataliaBrBangun">DeswitaNataliaBrBangun</option>
+							<option value="DwiPujiRahayu">DwiPujiRahayu</option>
+							<option value="FadhilYazidElRasyid">FadhilYazidElRasyid</option>
+							<option value="FitriParamita">FitriParamita</option>
+							<option value="IzzaNurKhoiriyah">IzzaNurKhoiriyah</option>
+							<option value="JoanSalha">JoanSalha</option>
+							<option value="KaniaLarasati">KaniaLarasati</option>
+							<option value="LibriMonicaPricilia">LibriMonicaPricilia</option>
+							<option value="LilyHildaNurdin">LilyHildaNurdin</option>
+							<option value="LisnaMirnawatiSilitonga">LisnaMirnawatiSilitonga</option>
+							<option value="MiatuzZuhro">MiatuzZuhro</option>
+							<option value="NoviNurmiaSari">NoviNurmiaSari</option>
+							<option value="NurAeni">NurAeni</option>
+							<option value="NurtaufikAbdurahman">NurtaufikAbdurahman</option>
+							<option value="PutriArumPurwati">PutriArumPurwati</option>
+							<option value="PutriRahmawati">PutriRahmawati</option>
+							<option value="RakaAdnanRuhussalam">RakaAdnanRuhussalam</option>
+							<option value="RianApriyanto">RianApriyanto</option>
+							<option value="RudiAndryanto">RudiAndryanto</option>
+							<option value="SabrinaFitryanti">SabrinaFitryanti</option>
+							<option value="SariDeviaAgustina">SariDeviaAgustina</option>
+							<option value="SonjaDewiCahyawati">SonjaDewiCahyawati</option>
+							<option value="SuciZahara">SuciZahara</option>
+							<option value="SyahlinaAdinda">SyahlinaAdinda</option>
+							<option value="TengkuVitaHeswina">TengkuVitaHeswina</option>
+							<option value="TetyYuliarti">TetyYuliarti</option>
+							<option value="WastiArdiyantiKondoBoroh">WastiArdiyantiKondoBoroh</option>
+							<option value="WiwiWidianty">WiwiWidianty</option>
+
+						</select>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-3 control-label">No Telepon</label>
+					<label class="col-sm-3 control-label">DOCUMENTSTATUS</label>
 					<div class="col-sm-3">
-						<input type="text" name="DOCUMENTSTATUS" value="<?php echo $row ['DOCUMENTSTATUS']; ?>" class="form-control" placeholder="No Telepon" required>
+						<select name="BRANCH" class="form-control" required>
+							<option value=""> - DOCUMENTSTATUS - </option>
+							<option value="DONE">DONE</option>
+							<option value="NotDONE">NotDone</option>						
+						</select>
 					</div>
 				</div>
 				<div class="form-group">
@@ -92,12 +148,9 @@ include("koneksi.php"); // memanggil file koneksi.php untuk koneksi ke database
 					<div class="col-sm-2">
 						<select name="STATUSVERIFICATIONAMS" class="form-control" required>
 							<option value=""> - STATUSVERIFICATIONAMS Terbaru - </option>
-							<option value="Helper">Helper</option>
-							<option value="Operator">Operator</option>
-							<option value="Leader">Leader</option>
-							<option value="Staf">Staf</option>
-                            <option value="Supervisor">Supervisor</option>
-							<option value="Manager">Manager</option>
+							<option value="DONE">DONE</option>
+							<option value="NotDONE">NotDone</option>
+							
 						</select>
 					</div>
                     <div class="col-sm-3">
